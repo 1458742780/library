@@ -65,9 +65,7 @@ public class BookServiceImpl implements BookService {
             booksMapper.addNumber(ibsn.getBookId());
             resut =1;
         }else {
-            if (books.getNumber()>1){
-                books.setNumber(new Short("1"));
-            }
+            books.setNumber(new Short("1"));
             SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");
             Date date = new Date();
             String dateString = format.format(date);
